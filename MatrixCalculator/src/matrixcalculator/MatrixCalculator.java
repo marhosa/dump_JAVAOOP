@@ -2,7 +2,7 @@
 package MatrixCalculator;
 import java.util.Scanner;
 
-public class matrixcalc {
+public class MatrixCalculator {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
@@ -86,4 +86,3 @@ public class matrixcalc {
         }
     }
 }
-
