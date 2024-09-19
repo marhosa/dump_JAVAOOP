@@ -37,6 +37,10 @@ public class Main {
  
                 break;
             case 3:
+                System.out.print("Enter Withdraw Amount: ");
+                itemp = sc.nextInt();
+                Balance -= itemp;
+                System.out.println("Withdrawed " + itemp + " New Balance: " + Balance);
                 break;
             case 4:
                 System.out.println("  THANK YOU FOR UHH USING THE ATM... ");
