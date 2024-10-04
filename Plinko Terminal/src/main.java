@@ -1,3 +1,7 @@
+
+
+
+
 import java.util.concurrent.TimeUnit;
 import java.util.Random;
 import java.util.Scanner;
@@ -20,17 +24,18 @@ public class main {
     }
 
     static void Spacer(int numberoflines) {
+        
         for (int x = 0; x < numberoflines; x++)
             System.out.println("");
     }
 
     public static void main(String[] args) {
         Random rand = new Random();
-        int plinkosize = 10;
+        int plinkosize = 11;
         int multiplier[] = 
         
         
-        {5000,1000,100,50,16,8,4,2,-1,-2,-3,-3,-2,-1,2,4,8,16,50,100,1000,5000};
+        {10000,5000,1000,100,50,16,8,4,2,-3,-4,-10,-4,-3,2,4,8,16,50,100,1000,5000,10000};
         
         
         boolean paradise = true;
@@ -38,7 +43,7 @@ public class main {
         double money = 1000;
         String endgame = " ";
         char temp;
-        float ballprice = 25;
+        float ballprice = 100;
         Spacer(100);
         do {
             if(money <= 0){
@@ -60,6 +65,7 @@ public class main {
 
 
             //Plinko Machine
+            timer(400);
             int ball_location = plinkosize;
             for (int i = 0; i < plinkosize; i++) {
                 for (int j = 0; j < plinkosize * 2 + 1; j++) {
@@ -70,10 +76,11 @@ public class main {
                         System.out.print(" ");
                     }
                 }
+                
+                ball_location += 1 + (-2 * rand.nextInt(2));
                 System.out.print("\t\t Multiplier: " + multiplier[ball_location]);
                 System.out.println();
-                ball_location += 1 + (-2 * rand.nextInt(2));
-                timer(250);
+                timer(220);
             }
             
             System.out.println("RESULT:  $"+ballprice*multiplier[ball_location] + " ");
@@ -82,6 +89,3 @@ public class main {
         }while(paradise);
     }
 }
-
-
-
