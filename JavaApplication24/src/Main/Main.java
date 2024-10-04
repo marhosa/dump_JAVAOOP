@@ -1,9 +1,26 @@
+/*
+NOTES:
+this program is developed on intellij
+how to run on apache netbeans?
+copy Main folder (folder that includes Main.java, People.java, Student.java, Subject.java
+then create a new apache netbeans project
+after that, paste the Main folder in Source Packages
+
+still not running?
+here is the software run on apache netbeans ide 22:
+https://github.com/marhosa/dump_javaoop/tree/main/JavaApplication24
+
+ */
+
+
+
 package Main;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+
 
     static void confirm(){
         Scanner scan = new Scanner(System.in);
@@ -114,6 +131,21 @@ public class Main {
     }
 
     public static void main(String[] args) {
+
+        spacer(5);
+        System.out.println(" ___  ___        ___  _________   \n" +
+                "|\\  \\|\\  \\      |\\  \\|\\___   ___\\ \n" +
+                "\\ \\  \\\\\\  \\     \\ \\  \\|___ \\  \\_| \n" +
+                " \\ \\   __  \\  __ \\ \\  \\   \\ \\  \\  \n" +
+                "  \\ \\  \\ \\  \\|\\  \\\\_\\  \\   \\ \\  \\ \n" +
+                "   \\ \\__\\ \\__\\ \\________\\   \\ \\__\\\n" +
+                "    \\|__|\\|__|\\|________|    \\|__|\n" +
+                "                                  \n" +
+                "                                  \n" +
+                "                                  ");
+        System.out.println("\nWelcome to the HJT Student Grading Management System Project!\n\n");
+
+        confirm();
 
         spacer(50);
         Scanner sc = new Scanner(System.in);
